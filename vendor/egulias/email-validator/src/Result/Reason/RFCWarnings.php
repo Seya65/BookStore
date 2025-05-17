@@ -2,15 +2,15 @@
 
 namespace Egulias\EmailValidator\Result\Reason;
 
-class AtextAfterCFWS implements Reason
+class RFCWarnings implements Reason
 {
     public function code() : int
     {
-        return 133;
+        return 997;
     }
 
     public function description() : string
     {
-        return 'ATEXT found after CFWS';
+        return 'Warnings found after validating';
     }
 }

@@ -2,15 +2,15 @@
 
 namespace Egulias\EmailValidator\Result\Reason;
 
-class AtextAfterCFWS implements Reason
+class LocalOrReservedDomain implements Reason
 {
     public function code() : int
     {
-        return 133;
+        return 153;
     }
 
     public function description() : string
     {
-        return 'ATEXT found after CFWS';
+        return 'Local, mDNS or reserved domain (RFC2606, RFC6762)';
     }
 }

@@ -2,15 +2,15 @@
 
 namespace Egulias\EmailValidator\Result\Reason;
 
-class AtextAfterCFWS implements Reason
+class DomainHyphened extends DetailedReason
 {
     public function code() : int
     {
-        return 133;
+        return 144;
     }
 
     public function description() : string
     {
-        return 'ATEXT found after CFWS';
+        return 'S_HYPHEN found in domain';
     }
 }

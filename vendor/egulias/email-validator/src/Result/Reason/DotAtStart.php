@@ -2,15 +2,15 @@
 
 namespace Egulias\EmailValidator\Result\Reason;
 
-class AtextAfterCFWS implements Reason
+class DotAtStart implements Reason
 {
     public function code() : int
     {
-        return 133;
+        return 141;
     }
 
     public function description() : string
     {
-        return 'ATEXT found after CFWS';
+        return "Starts with a DOT";
     }
 }

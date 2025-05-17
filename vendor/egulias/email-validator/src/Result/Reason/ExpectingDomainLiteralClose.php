@@ -2,15 +2,15 @@
 
 namespace Egulias\EmailValidator\Result\Reason;
 
-class AtextAfterCFWS implements Reason
+class ExpectingDomainLiteralClose implements Reason
 {
     public function code() : int
     {
-        return 133;
+        return 137;
     }
 
     public function description() : string
     {
-        return 'ATEXT found after CFWS';
+        return "Closing bracket ']' for domain literal not found";
     }
 }

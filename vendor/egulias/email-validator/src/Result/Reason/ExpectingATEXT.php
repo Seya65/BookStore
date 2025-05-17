@@ -2,15 +2,15 @@
 
 namespace Egulias\EmailValidator\Result\Reason;
 
-class AtextAfterCFWS implements Reason
+class ExpectingATEXT extends DetailedReason
 {
     public function code() : int
     {
-        return 133;
+        return 137;
     }
 
     public function description() : string
     {
-        return 'ATEXT found after CFWS';
+        return "Expecting ATEXT (Printable US-ASCII). Extended: " . $this->detailedDescription;
     }
 }

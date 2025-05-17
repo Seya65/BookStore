@@ -2,15 +2,15 @@
 
 namespace Egulias\EmailValidator\Result\Reason;
 
-class AtextAfterCFWS implements Reason
+class DomainTooLong implements Reason
 {
     public function code() : int
     {
-        return 133;
+        return 244;
     }
 
     public function description() : string
     {
-        return 'ATEXT found after CFWS';
+        return 'Domain is longer than 253 characters';
     }
 }

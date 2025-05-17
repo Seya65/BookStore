@@ -2,15 +2,15 @@
 
 namespace Egulias\EmailValidator\Result\Reason;
 
-class AtextAfterCFWS implements Reason
+class UnclosedQuotedString implements Reason
 {
     public function code() : int
     {
-        return 133;
+        return 145;
     }
 
     public function description() : string
     {
-        return 'ATEXT found after CFWS';
+        return "Unclosed quoted string";
     }
 }

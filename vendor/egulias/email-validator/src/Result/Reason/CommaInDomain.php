@@ -2,15 +2,15 @@
 
 namespace Egulias\EmailValidator\Result\Reason;
 
-class AtextAfterCFWS implements Reason
+class CommaInDomain implements Reason
 {
     public function code() : int
     {
-        return 133;
+        return 200;
     }
 
     public function description() : string
     {
-        return 'ATEXT found after CFWS';
+        return "Comma ',' is not allowed in domain part";
     }
 }

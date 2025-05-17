@@ -2,15 +2,15 @@
 
 namespace Egulias\EmailValidator\Result\Reason;
 
-class AtextAfterCFWS implements Reason
+class DomainAcceptsNoMail implements Reason
 {
     public function code() : int
     {
-        return 133;
+        return 154;
     }
 
     public function description() : string
     {
-        return 'ATEXT found after CFWS';
+        return 'Domain accepts no mail (Null MX, RFC7505)';
     }
 }
