@@ -14,8 +14,8 @@ declare(strict_types=1);
 namespace Dflydev\DotAccessData\Exception;
 
 /**
- * Base runtime exception type thrown by this library
+ * Thrown when trying to access an invalid path in the data array
  */
-class DataException extends \RuntimeException
+class InvalidPathException extends DataException
 {
 }
